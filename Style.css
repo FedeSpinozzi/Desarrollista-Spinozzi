@@ -1,0 +1,183 @@
+/* ------------------------------------ RESET --------------------------------- */
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* BODY */
+
+body{
+    display: grid;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+}
+
+
+header{
+    grid-area: header;
+}
+
+/* le aplico flex al nav para que me ponga en fila tanto el logo que esta dentro del contenedor como los enlaces */
+
+nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.nav_text{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* al logo le puse un width (se le puede cambiar por la medida que quieras) y despues le puse un height auto para que no se deforme la imagen */
+
+.logo{
+    width: 180px;
+    height: auto;
+}
+
+/* tambien le aplico flex en la etiqueta ul para que me ponga en fila los items/links y le aplique un padding a la etiqueta li para que me los separe un poco */
+
+
+ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul li{
+    padding: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+/* ------------------------------- MAIN ---------------------------- */
+
+main{
+    grid-area: main;
+}
+
+
+/* si las imagenes se usan de fondo siempre tienen que ir dentro del archivo css, si las imagenes son por contenido como por ejemplo imagenes de productos dentro de las etiquetas img en el html, en este caso como podria ser una imagen de fondo la aplico dentro del css con una class hero */
+
+.hero{
+    background-image: url(./img/peakpx.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+
+.contenedor-primero, .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.contenedor__title{
+    font-size: 1.5rem;
+}
+
+.contenedor__img{
+    width: 500px;
+    height: auto;
+
+}
+.contenedor2{
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;    
+}
+.contenedor__img2{
+    width: 200px;
+    height: auto
+}  
+
+
+
+
+/* ---------------------------------------- FOOTER ----------------------------------- */
+
+footer{
+    grid-area: footer;
+    background-color: #000;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------------- BTN HOVER----------------------------------- */
+.btn{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #d6220e;
+    border-radius: 0.6em;
+    color: #000000;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+     align-self: center;
+     font-size: 10px;
+     font-weight: 150;
+     line-height: 1;
+     
+     padding: 0.75em 1.80em;
+   
+     text-align: center;
+     text-transform: uppercase;
+     font-family: Verdana, 
+     font-weight: 100px;
+}
+.btn:hover, .btn:focus{
+     color: rgb(0, 0, 0);
+     outline: 0;
+}
+   
+.first{
+     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover{
+     box-shadow: 0 0 40px 40px #e74c3c inset;
+ }
+
+/* ---------------------------------------- Departamentos CSS----------------------------------- */
+.imgdpto{
+    width: 600px;
+    height: auto;
+}
