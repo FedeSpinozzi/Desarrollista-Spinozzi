@@ -181,3 +181,26 @@ footer i{
     width: 600px;
     height: auto;
 }
+
+/* ---------------------------------------- Duplex CSS----------------------------------- */
+
+.imgduplex{
+    width: 600px;
+    height: auto;
+}
+
+/* ---------------------------------------- Contactanos----------------------------------- */
+.Separacion{
+    padding-top: 55px;
+}   
+
+/* ---------------------------------------- Datos Enviados----------------------------------- */
+.img{
+    padding-top: 100px;
+    width: 700px;
+    height: auto;
+    
+}
+.h1{
+    padding-top: 100px;
+}
