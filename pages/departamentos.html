@@ -1,77 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="../Style.css" />
-  </head>
-  <!-- divido el html en secciones -->
 
-  <!-- navbar -->
-  <header>
-    <nav class="nav_text">
-      <div>
-        <a href="../Index.html"
-          ><img src="../img/LOGO.png" alt="logo" class="logo"
-        /></a>
-      </div>
-      <ul>
-        <li><a href="./departamentos.html">Departamentos</a></li>
-        <li><a href="./duplex.html">Duplex</a></li>
-        <li><a href="./amenities.html">Amenities</a></li>
-        <li class="btn first"><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../Style.css">
+</head>
+<!-- divido el html en secciones -->
 
-  <body>
-    <main>
-      <div class="contenedor-primero">
-        <h1>Nuestros Departamentos</h1>
-        <p class="contenedor-primero__text">
-          Nuestros departamentos se caracterizan por contar con amplios espacios
-          y con la mejor luminación natural. Además posee vista panoramica de la
-          ciudad.
-        </p>
-        <p class="contenedor-primero__text">
-          Cuentan con una plaza central de uso e exclusivo, peatonal y lúdico,
-          con veredas, jardines, espacios verdes y lugares de encuentro,
-          recreando una atmósfera propia e independizándola de la circulación
-          permanente
-        </p>
-      </div>
-      <div class="contenedor">
-        <h2 class="contenedor__title">Departamento de dos Dormitorios</h2>
-        <img
-          class="imgdpto"
-          src="../img/dpto2dormitorios.jpg"
-          alt="DPTO2D"
-          class="rounded-left"
-        />
+<!-- navbar -->
+<header>
+  <section class="container-fluid">
+    <div class="row">
+      <nav class="nav_text">
+        <div class="col-xl-8 col-md-7 col-sm-6">
+          <a href="../Index.html"><img src="../img/LOGO.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="col-xl-4 col-md-5 col-sm-6">
+          <ul>
+            <li><a href="./departamentos.html">Departamentos</a></li>
+            <li><a href="./duplex.html">Duplex</a></li>
+            <li><a href="./amenities.html">Amenities</a></li>
+            <li class="btn first"><a href="./contacto.html">Contacto</a></li>
 
-        <h3 class="contenedor__title">Departamento de un dormitorio</h3>
-        <img class="imgdpto" src="../img/dptos1dormitorio.jpg" alt="" />
-      </div>
-    </main>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+</header>
 
-    <!-- footer  -->
-    <!-- Pongo los iconos de bootstrap para las redes sociales -->
-    <footer>
-      <a href="https://www.facebook.com/fede.spinozzi/"
-        ><i class="bi bi-facebook"></i
-      ></a>
-      <a href="https://www.instagram.com/fede_spinozzi/?hl=es"
-        ><i class="bi bi-instagram"></i
-      ></a>
-      <a href="mailto:fede_spinozzi@hotmail.com"
-        ><i class="bi bi-envelope"></i
-      ></a>
-      <a href="+5493513043658"><i class="bi bi-whatsapp"></i></a>
-    </footer>
-  </body>
+<body>
+  <main>
+    <div class="contenedor-primero">
+      <h1 class="Margen">Nuestros Departamentos</h1>
+      <p class="contenedor-primero__text">
+        Nuestros departamentos se caracterizan por contar con amplios espacios
+        y con la mejor luminación natural. Además posee vista panoramica de la
+        ciudad.
+      </p>
+      <p class="contenedor-primero__text">
+        Cuentan con una plaza central de uso e exclusivo, peatonal y lúdico,
+        con veredas, jardines, espacios verdes y lugares de encuentro,
+        recreando una atmósfera propia e independizándola de la circulación
+        permanente
+      </p>
+    </div>
+    <div class="contenedor">
+      <h2 class="contenedor__title">Departamento de dos Dormitorios</h2>
+      <img class="imgdpto" src="../img/dpto2dormitorios.jpg" alt="DPTO2D" class="rounded-left" />
+
+      <h3 class="contenedor__title">Departamento de un dormitorio</h3>
+      <img class="imgdpto" src="../img/dptos1dormitorio.jpg" alt="" />
+    </div>
+  </main>
+
+  <!-- footer  -->
+  <!-- Pongo los iconos de bootstrap para las redes sociales -->
+  <footer>
+    <a href="https://www.facebook.com/fede.spinozzi/"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/fede_spinozzi/?hl=es"><i class="bi bi-instagram"></i></a>
+    <a href="mailto:fede_spinozzi@hotmail.com"><i class="bi bi-envelope"></i></a>
+    <a href="+5493513043658"><i class="bi bi-whatsapp"></i></a>
+  </footer>
+</body>
+
 </html>
