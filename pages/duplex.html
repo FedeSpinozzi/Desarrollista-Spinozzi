@@ -12,7 +12,7 @@
 <!-- divido el html en secciones -->
 
 <!-- navbar -->
-<header>
+<header class="border border-end-0 c">
   <section class="container-fluid">
     <div class="row">
       <nav class="nav_text">
@@ -31,32 +31,47 @@
       </nav>
     </div>
   </section>
+</header>
 
-  <body>
-    <main>
-      <div class="contenedor-primero">
-        <h1>Nuestros Duplex</h1>
-        <p class="contenedor-primero__text">
-          Nuestros duplex se caracterizan por contar con amplia iluminacion
-          natural, entre 70 y 100 metros cubiertos, con la mas alta calidad de
-          construcción
-        </p>
-      </div>
-      <div class="contenedor">
-        <img class="imgduplex" src="../img/duplex.jpg" alt="DPTO2D" />
+<body>
+  <main>
+    <div class="contenedor-primero">
+      <h1>Nuestros Duplex</h1>
+      <p class="contenedor-primero__text">
+        Nuestros duplex se caracterizan por contar con amplia iluminacion
+        natural, entre 70 y 100 metros cubiertos, con la mas alta calidad de
+        construcción
+      </p>
+      <section class="Display">
+        <div class="contenedor-primero">
+          <div class="card" style="width: 35rem;">
+            <img src="../img/duplex.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Duplex Modelo I</h5>
+              <p class="card-text">Diseño moderno, con buena iluminación y amplios espacios</p>
+            </div>
+          </div>
+          <div class="contenedor-segundo">
+            <div class="card" style="width: 35rem; margin-top: 15px;">
+              <img src="../img/duplex2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Duplex MODELO II</h5>
+                <p class="card-text">Para los más exigentes, construido con la más alta calidad de materiales</p>
+              </div>
+            </div>
+          </div>
+      </section>
 
-        <img class="imgduplex" src="../img/duplex2.jpg" alt="" />
-      </div>
-    </main>
+  </main>
 
-    <!-- footer  -->
-    <!-- Pongo los iconos de bootstrap para las redes sociales -->
-    <footer>
-      <a href="https://www.facebook.com/fede.spinozzi/"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/fede_spinozzi/?hl=es"><i class="bi bi-instagram"></i></a>
-      <a href="mailto:fede_spinozzi@hotmail.com"><i class="bi bi-envelope"></i></a>
-      <a href="+5493513043658"><i class="bi bi-whatsapp"></i></a>
-    </footer>
-  </body>
+  <!-- footer  -->
+  <!-- Pongo los iconos de bootstrap para las redes sociales -->
+  <footer>
+    <a href="https://www.facebook.com/fede.spinozzi/"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/fede_spinozzi/?hl=es"><i class="bi bi-instagram"></i></a>
+    <a href="mailto:fede_spinozzi@hotmail.com"><i class="bi bi-envelope"></i></a>
+    <a href="+5493513043658"><i class="bi bi-whatsapp"></i></a>
+  </footer>
+</body>
 
 </html>

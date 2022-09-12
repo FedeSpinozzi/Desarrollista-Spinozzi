@@ -12,7 +12,7 @@
 <!-- divido el html en secciones -->
 
 <!-- navbar -->
-<header>
+<header class="border border-end-0 c">
   <section class="container-fluid">
     <div class="row">
       <nav class="nav_text">
@@ -34,9 +34,9 @@
 </header>
 
 <body>
-  <main>
+  <main class="margin">
     <div class="contenedor-primero">
-      <h1 class="Margen">Nuestros Departamentos</h1>
+      <h1>Nuestros Departamentos</h1>
       <p class="contenedor-primero__text">
         Nuestros departamentos se caracterizan por contar con amplios espacios
         y con la mejor luminación natural. Además posee vista panoramica de la
@@ -49,13 +49,26 @@
         permanente
       </p>
     </div>
-    <div class="contenedor">
-      <h2 class="contenedor__title">Departamento de dos Dormitorios</h2>
-      <img class="imgdpto" src="../img/dpto2dormitorios.jpg" alt="DPTO2D" class="rounded-left" />
+    <section class="Display">
+      <div class="contenedor-primero">
+        <div class="card" style="width: 35rem;">
+          <img src="../img/dptos1dormitorio.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Departamentos de un Dormitorio</h5>
+            <p class="card-text">Diseños modernos, con amplios espacios y buena iluminacion</p>
+          </div>
+        </div>
+        <div class="contenedor-segundo">
+          <div class="card" style="width: 35rem; margin-top: 15px;">
+            <img src="../img/dpto2dormitorios.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Departamentos de dos Dormitorios</h5>
+              <p class="card-text">El lugar soñado para la familia completa</p>
+            </div>
+          </div>
+        </div>
+    </section>
 
-      <h3 class="contenedor__title">Departamento de un dormitorio</h3>
-      <img class="imgdpto" src="../img/dptos1dormitorio.jpg" alt="" />
-    </div>
   </main>
 
   <!-- footer  -->
