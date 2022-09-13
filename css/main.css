@@ -1,0 +1,41 @@
+/* ------------------------------------ RESET --------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/* BODY */
+body {
+  display: grid;
+  grid-template-areas: "header"
+ "main"
+ "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; }
+  body .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  body .nav_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  body .logo {
+    width: 180px;
+    height: auto; }
+  body ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap; }
+    body ul ul li {
+      padding: 10px; }
+    body ul ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1.2rem; 
+    }
+
+header {
+  grid-area: header; }
+
+/* le aplico flex al nav para que me ponga en fila tanto el logo que esta dentro del contenedor como los enlaces */
+/* tambien le aplico flex en la etiqueta ul para que me ponga en fila los items/links y le aplique un padding a la etiqueta li para que me los separe un poco */
