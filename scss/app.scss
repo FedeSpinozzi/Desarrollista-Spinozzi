@@ -1,8 +1,20 @@
+/* Variables */
+$colors: (primary: #000000,
+         secondary: #d6220e,  
+         tertiary: #fff);
+
+
+
+/*Estilos generales */
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  @each $color-name, $color-value in $colors{
+    .#{color-name}{color:#{color-value}}
+  }
 }
 
 /* BODY */
@@ -23,7 +35,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   .nav_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    font-family: Verdana, Geneva, Tahoma, sans-serify;
+    color: "primary"}
     .logo {
       width: 180px;
       height: auto;
@@ -46,7 +59,7 @@ ul {
 
     a {
       text-decoration: none;
-      color: #000;
+      color: "tertiary";
       font-size: 1.2rem;
     }
   }
@@ -103,7 +116,7 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: "primary";
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
@@ -112,7 +125,7 @@ footer {
 
   i {
     text-decoration: none;
-    color: #fff;
+    color: "tertiary";
     font-size: 1.5rem;
   }
 }
@@ -123,9 +136,9 @@ footer {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid #d6220e;
+  border: 1px solid "secondary";
   border-radius: 0.6em;
-  color: #000000;
+  color: "primary";
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,7 +156,7 @@ footer {
   font-family: (Verdana,);
 
   &:hover, &:focus {
-    color: rgb(0, 0, 0);
+    color: "secondary";
     outline: 0;
   }
   .first {
@@ -151,7 +164,7 @@ footer {
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;}
   
     &:hover {
-      box-shadow: 0 0 40px 40px #e74c3c inset;
+      box-shadow: 0 0 40px 40px "secondary" inset;
     }
   
 }

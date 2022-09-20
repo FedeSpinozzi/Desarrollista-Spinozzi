@@ -1,8 +1,16 @@
+/* Variables */
+/*Estilos generales */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  * .color-name {
+    color: color-value; }
+  * .color-name {
+    color: color-value; }
+  * .color-name {
+    color: color-value; }
 
 /* BODY */
 body {
@@ -19,7 +27,8 @@ nav {
   justify-content: space-between;
   align-items: center; }
   nav .nav_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    font-family: Verdana, Geneva, Tahoma, sans-serify;
+    color: "primary"; }
   nav .logo {
     width: 180px;
     height: auto; }
@@ -34,7 +43,7 @@ ul {
     padding: 10px; }
     ul li a {
       text-decoration: none;
-      color: #000;
+      color: "tertiary";
       font-size: 1.2rem; }
 
 main {
@@ -77,7 +86,7 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: "primary";
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
@@ -85,7 +94,7 @@ footer {
   margin-top: 10px; }
   footer i {
     text-decoration: none;
-    color: #fff;
+    color: "tertiary";
     font-size: 1.5rem; }
 
 .btn {
@@ -94,9 +103,9 @@ footer {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid #d6220e;
+  border: 1px solid "secondary";
   border-radius: 0.6em;
-  color: #000000;
+  color: "primary";
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -113,13 +122,13 @@ footer {
   text-transform: uppercase;
   font-family: Verdana; }
   .btn:hover, .btn:focus {
-    color: black;
+    color: "secondary";
     outline: 0; }
   .btn .first {
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out; }
   .btn:hover {
-    box-shadow: 0 0 40px 40px #e74c3c inset; }
+    box-shadow: 0 0 40px 40px "secondary" inset; }
 
 .imgdpto {
   width: 600px;
