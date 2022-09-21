@@ -1,9 +1,15 @@
-/* Variables */
-$color-primary: #000;
-$color-secondary: #fff;
-$color-terteary: #d6220e;
+@import './variables';
+@import './header.scss';
+@import './footer.scss';
 
-
+@mixin flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
 
 /*Estilos generales */
 
@@ -24,51 +30,6 @@ body {
   grid-template-rows: auto;
 }
 
-header {
-  grid-area: header;
-  
-  
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $color-primary;
-  
-  
-  
-}
-  .nav_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serify;     
-    .logo {
-      width: 250px;
-      height: auto;
-    }
-}
-
-
-/* al logo le puse un width (se le puede cambiar por la medida que quieras) y despues le puse un height auto para que no se deforme la imagen */
-
-
-/* tambien le aplico flex en la etiqueta ul para que me ponga en fila los items/links y le aplique un padding a la etiqueta li para que me los separe un poco */
-
-ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-
-  li {
-    padding: 10px;
-
-    a {
-      text-decoration: none;
-      color: $color-secondary;
-      font-size: 1rem;
-    }
-  }
-}
-
 main {
   grid-area: main;
 }
@@ -84,11 +45,7 @@ main {
 }
 
 .contenedor-primero, .contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include flexbox
   margin-top: 100px;
   .contenedor__title {
     font-size: 1.5rem;
@@ -98,11 +55,11 @@ main {
 
 
 .contenedor__img {
-  width: 500px;
+  width: map-get($width-size, large);
   height: auto;
   .img {
     padding-top: 100px;
-    width: 700px;
+    width: map-get($width-size, xxlarge);
     height: auto;}
 }
 
@@ -113,27 +70,8 @@ main {
   align-items: center;
   margin-top: 10px;
   .contenedor__img2 {
-    width: 200px;
+    width: map-get($width-size, xsmall);
     height: auto;
-  }
-}
-
-
-
-
-footer {
-  grid-area: footer;
-  background-color: $color-primary;
-  height: 10vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 10px;
-
-  i {
-    text-decoration: none;
-    color: $color-secondary;
-    font-size: 1.5rem;
   }
 }
 
@@ -179,7 +117,7 @@ footer {
 
 
 .imgdpto {
-  width: 600px;
+  width: map-get($width-size, xlarge);
   height: 600px;
   .margin {
     margin-top: 25px;
@@ -187,10 +125,8 @@ footer {
   
 }
 
-
 .imgduplex {
-  width: 600px;
-  height: auto;
+  @extend .imgdpto;  
   .Separacion {
     padding-top: 55px;
   }

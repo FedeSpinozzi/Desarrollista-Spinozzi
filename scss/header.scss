@@ -1,0 +1,44 @@
+header {
+  grid-area: header;
+  
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  
+  
+  
+}
+  .nav_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serify;     
+    .logo {
+      width: map-get($width-size, small);
+      height: auto;
+    }
+}
+
+
+/* al logo le puse un width (se le puede cambiar por la medida que quieras) y despues le puse un height auto para que no se deforme la imagen */
+
+
+/* tambien le aplico flex en la etiqueta ul para que me ponga en fila los items/links y le aplique un padding a la etiqueta li para que me los separe un poco */
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+  li {
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      color: $color-secondary;
+      font-size: 1rem;
+    }
+  }
+}
