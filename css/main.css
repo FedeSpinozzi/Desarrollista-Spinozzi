@@ -5,12 +5,6 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  * .color-name {
-    color: color-value; }
-  * .color-name {
-    color: color-value; }
-  * .color-name {
-    color: color-value; }
 
 /* BODY */
 body {
@@ -25,12 +19,13 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  nav .nav_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serify;
-    color: "primary"; }
-  nav .logo {
-    width: 180px;
+  align-items: center;
+  background-color: #000; }
+
+.nav_text {
+  font-family: Verdana, Geneva, Tahoma, sans-serify; }
+  .nav_text .logo {
+    width: 250px;
     height: auto; }
 
 /* al logo le puse un width (se le puede cambiar por la medida que quieras) y despues le puse un height auto para que no se deforme la imagen */
@@ -43,8 +38,8 @@ ul {
     padding: 10px; }
     ul li a {
       text-decoration: none;
-      color: "tertiary";
-      font-size: 1.2rem; }
+      color: #fff;
+      font-size: 1rem; }
 
 main {
   grid-area: main; }
@@ -55,13 +50,14 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px; }
+  height: 500px; }
 
 .contenedor-primero, .contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 100px; }
   .contenedor-primero .contenedor__title, .contenedor .contenedor__title {
     font-size: 1.5rem; }
@@ -86,7 +82,7 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: "primary";
+  background-color: #000;
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
@@ -94,7 +90,7 @@ footer {
   margin-top: 10px; }
   footer i {
     text-decoration: none;
-    color: "tertiary";
+    color: #fff;
     font-size: 1.5rem; }
 
 .btn {
@@ -103,9 +99,9 @@ footer {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid "secondary";
+  border: 1px solid #d6220e;
   border-radius: 0.6em;
-  color: "primary";
+  color: #000;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -122,17 +118,17 @@ footer {
   text-transform: uppercase;
   font-family: Verdana; }
   .btn:hover, .btn:focus {
-    color: "secondary";
+    color: #000;
     outline: 0; }
   .btn .first {
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out; }
   .btn:hover {
-    box-shadow: 0 0 40px 40px "secondary" inset; }
+    box-shadow: 0 0 40px 40px #d6220e inset; }
 
 .imgdpto {
   width: 600px;
-  height: auto; }
+  height: 600px; }
   .imgdpto .margin {
     margin-top: 25px; }
 
@@ -141,3 +137,13 @@ footer {
   height: auto; }
   .imgduplex .Separacion {
     padding-top: 55px; }
+
+.proyectos {
+  padding-top: 100px;
+  text-align: center; }
+
+.btn .btn-primary {
+  text-align: center; }
+
+.contenedor-primero__text {
+  margin-top: 2rem; }

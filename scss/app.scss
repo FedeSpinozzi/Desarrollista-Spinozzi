@@ -1,7 +1,7 @@
 /* Variables */
-$colors: (primary: #000000,
-         secondary: #d6220e,  
-         tertiary: #fff);
+$color-primary: #000;
+$color-secondary: #fff;
+$color-terteary: #d6220e;
 
 
 
@@ -11,11 +11,9 @@ $colors: (primary: #000000,
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  @each $color-name, $color-value in $colors{
-    .#{color-name}{color:#{color-value}}
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
   }
-}
+
 
 /* BODY */
 
@@ -28,17 +26,23 @@ body {
 
 header {
   grid-area: header;
+  
+  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $color-primary;
+  
+  
+  
+}
   .nav_text {
-    font-family: Verdana, Geneva, Tahoma, sans-serify;
-    color: "primary"}
+    font-family: Verdana, Geneva, Tahoma, sans-serify;     
     .logo {
-      width: 180px;
+      width: 250px;
       height: auto;
     }
 }
@@ -59,8 +63,8 @@ ul {
 
     a {
       text-decoration: none;
-      color: "tertiary";
-      font-size: 1.2rem;
+      color: $color-secondary;
+      font-size: 1rem;
     }
   }
 }
@@ -76,7 +80,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 500px;
 }
 
 .contenedor-primero, .contenedor {
@@ -84,9 +88,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 100px;
   .contenedor__title {
     font-size: 1.5rem;
+    
   }
 }
 
@@ -114,9 +120,10 @@ main {
 
 
 
+
 footer {
   grid-area: footer;
-  background-color: "primary";
+  background-color: $color-primary;
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
@@ -125,7 +132,7 @@ footer {
 
   i {
     text-decoration: none;
-    color: "tertiary";
+    color: $color-secondary;
     font-size: 1.5rem;
   }
 }
@@ -136,9 +143,9 @@ footer {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid "secondary";
+  border: 1px solid $color-terteary;
   border-radius: 0.6em;
-  color: "primary";
+  color: $color-primary;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -156,15 +163,16 @@ footer {
   font-family: (Verdana,);
 
   &:hover, &:focus {
-    color: "secondary";
+    color: $color-primary;
     outline: 0;
   }
   .first {
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;}
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
   
     &:hover {
-      box-shadow: 0 0 40px 40px "secondary" inset;
+      box-shadow: 0 0 40px 40px $color-terteary inset;
     }
   
 }
@@ -172,12 +180,13 @@ footer {
 
 .imgdpto {
   width: 600px;
-  height: auto;
+  height: 600px;
   .margin {
     margin-top: 25px;
   }
   
 }
+
 
 .imgduplex {
   width: 600px;
@@ -186,5 +195,20 @@ footer {
     padding-top: 55px;
   }
 }
+.proyectos{
+  padding-top: 100px;
+  
+  text-align: center;
+  
+  
+}
 
-
+.btn {
+  .btn-primary{
+    text-align: center;
+  }
+}
+.contenedor-primero__text{
+  margin-top: 1rem;
+  
+}
